@@ -189,26 +189,26 @@ const HomePage: React.FC = () => {
         {/* CHARM Methodology */}
         <section id="how-it-works" className="gmc-charm">
           <div className="gmc-container">
-            <h2 className="gmc-section-title">That's why we have created the charm approach</h2>
+            <h2 className="gmc-section-title">That's why we have created the moxie approach</h2>
             <div className="gmc-charm-steps">
               <div className="gmc-charm-step">
-                <h3>Crafting a Flawless Impression</h3>
-                <p>We fine-tune your online presence to evoke instant rapport with potential CBI/RBI clients, making them feel they've found their perfect migration partner.</p>
+                <h3>Crafting Magnetic First Impressions</h3>
+                <p>We position your brand to immediately resonate and attract high net worth individuals. Your online presence will be magnetically calibrated to communicate authority, sophistication and trust at first glance.</p>
               </div>
               <div className="gmc-charm-step">
-                <h3>Hyper-Precise Prospect Targeting</h3>
+                <h3>Optomize Outreach</h3>
                 <p>We meticulously identify financially qualified prospects seeking global mobility solutions, ensuring they precisely match the demographic of those genuinely interested in citizenship and residency programs.</p>
               </div>
               <div className="gmc-charm-step">
-                <h3>Anchor Initial Engagement</h3>
-                <p>We design a compelling engagement strategy to captivate your ideal prospects' attention and prompt them to respond, initiating conversations about their mobility goals.</p>
+                <h3>eXpress Clarity & Confidence</h3>
+                <p>Your message matters. We help express concise and compelling narratives that communicate value immediately and build credibility through multiple touchpoints.</p>
               </div>
               <div className="gmc-charm-step">
-                <h3>Reach Their Curiosity Naturally</h3>
-                <p>After the initial contact, we inspire engaging conversations that naturally stimulate the prospect's curiosity to explore citizenship and residency investment opportunities.</p>
+                <h3>Ignite Curiosity</h3>
+                <p>After the initial contact, we inspire engaging conversations that naturally stimulate the prospect's curiosity to explore citizenship and residency investment opportunities. We understand how niche the citizenship by investment industry is and offer clear explanations to any questions potential investors have.</p>
               </div>
               <div className="gmc-charm-step">
-                <h3>Mobilize a Meeting</h3>
+                <h3>Empower the next move</h3>
                 <p>With the prospect's interest piqued, we facilitate an invitation for a consultation call or meeting, and schedule it directly in your calendar.</p>
               </div>
             </div>
