@@ -1,0 +1,9 @@
+{
+  "recommendations": [
+    "bradlc.vscode-tailwindcss",
+    "esbenp.prettier-vscode",
+    "@typescript-eslint/eslint-plugin",
+    "ms-vscode.vscode-typescript-next"
+  ]
+}
+
