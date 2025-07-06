@@ -1,0 +1,653 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap');
+
+/* Reset and Base Styles - Heliconview Approach */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #000000;
+  background-color: #ffffff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Container - Heliconview Style */
+.gmc-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Navigation - Minimal Heliconview Style */
+.gmc-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.gmc-nav.scrolled {
+  background-color: rgba(255, 255, 255, 0.98);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+}
+
+.gmc-nav-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.gmc-logo span {
+  font-family: 'Crimson Text', serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #000000;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+}
+
+.gmc-nav-links {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.gmc-nav-link {
+  background: none;
+  border: none;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 400;
+  color: #000000;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  padding: 0.5rem 0;
+}
+
+.gmc-nav-link:hover {
+  color: #666666;
+}
+
+.gmc-cta-button {
+  background: #000000;
+  color: #ffffff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  letter-spacing: 0.5px;
+}
+
+.gmc-cta-button:hover {
+  background: #333333;
+}
+
+/* Hero Section - Heliconview Dark Background Style */
+.gmc-hero {
+  position: relative;
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+              url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="50" cy="50" r="1" fill="%23ffffff" opacity="0.1"/></pattern></defs><rect width="100%" height="100%" fill="%23333333"/><rect width="100%" height="100%" fill="url(%23grain)"/></svg>');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+}
+
+.gmc-hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.gmc-hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.gmc-hero-title {
+  font-family: 'Crimson Text', serif;
+  font-size: 3.5rem;
+  font-weight: 400;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+  letter-spacing: 1px;
+}
+
+.gmc-highlight {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.gmc-hero-benefits {
+  margin: 2rem 0 3rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.gmc-benefit {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #ffffff;
+  opacity: 0.9;
+}
+
+.gmc-hero-cta {
+  background: #ffffff;
+  color: #000000;
+  border: none;
+  padding: 1rem 2rem;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  letter-spacing: 1px;
+  margin-top: 1rem;
+}
+
+.gmc-hero-cta:hover {
+  background: #f0f0f0;
+  transform: translateY(-2px);
+}
+
+.gmc-hero-stats {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 2rem 0;
+  z-index: 2;
+}
+
+.gmc-stats-content {
+  text-align: center;
+}
+
+.gmc-stats-text {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #ffffff;
+  letter-spacing: 2px;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.gmc-stats-numbers {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.gmc-stats-numbers span {
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #ffffff;
+  opacity: 0.9;
+}
+
+/* Perfect For Section - Heliconview Style */
+.gmc-perfect-for {
+  background: #ffffff;
+  padding: 5rem 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.gmc-perfect-title {
+  font-family: 'Crimson Text', serif;
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 3rem;
+  line-height: 1.3;
+}
+
+.gmc-perfect-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2.5rem;
+  margin-top: 2rem;
+}
+
+.gmc-perfect-item {
+  text-align: left;
+  padding: 1.5rem 0;
+}
+
+.gmc-perfect-item h3 {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #000000;
+  margin-bottom: 0.75rem;
+  letter-spacing: 0.3px;
+}
+
+.gmc-perfect-item p {
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #000000;
+  opacity: 0.8;
+}
+
+/* Client Logos - Heliconview Minimal Style */
+.gmc-clients {
+  background: #ffffff;
+  padding: 3rem 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.gmc-client-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.gmc-client-logo {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #666666;
+  opacity: 0.7;
+  letter-spacing: 0.5px;
+}
+
+/* About Section - Heliconview Clean Style */
+.gmc-about {
+  background: #ffffff;
+  padding: 5rem 0;
+}
+
+.gmc-about-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.gmc-intro-text {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 1.8;
+  color: #000000;
+  margin: 0;
+}
+
+/* Challenges Section */
+.gmc-challenges {
+  background: #f8f8f8;
+  padding: 5rem 0;
+}
+
+.gmc-section-title {
+  font-family: 'Crimson Text', serif;
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 3rem;
+  line-height: 1.3;
+}
+
+.gmc-challenges-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.gmc-challenge {
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #000000;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+/* CHARM Methodology - Heliconview Style */
+.gmc-charm {
+  background: #ffffff;
+  padding: 5rem 0;
+}
+
+.gmc-charm-steps {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.gmc-charm-step {
+  text-align: left;
+  padding: 2rem 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.gmc-charm-step:last-child {
+  border-bottom: none;
+}
+
+.gmc-charm-step h3 {
+  font-family: 'Crimson Text', serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #000000;
+  margin-bottom: 1rem;
+}
+
+.gmc-charm-step p {
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #000000;
+}
+
+/* Services Section */
+.gmc-services {
+  background: #f8f8f8;
+  padding: 5rem 0;
+}
+
+.gmc-services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 3rem;
+  margin-top: 3rem;
+}
+
+.gmc-service {
+  background: #ffffff;
+  padding: 2.5rem 2rem;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.gmc-service:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.gmc-service-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  display: block;
+}
+
+.gmc-service h3 {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #000000;
+  margin-bottom: 1rem;
+  letter-spacing: 0.5px;
+}
+
+.gmc-service p {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #000000;
+}
+
+/* Contact Section - Heliconview Dark Style */
+.gmc-contact {
+  background: #000000;
+  color: #ffffff;
+  padding: 5rem 0;
+}
+
+.gmc-contact-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.gmc-contact-text h2 {
+  font-family: 'Crimson Text', serif;
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+  line-height: 1.3;
+}
+
+.gmc-contact-text p {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #ffffff;
+  opacity: 0.9;
+  margin-bottom: 2rem;
+}
+
+.gmc-contact-info h3 {
+  font-family: 'Crimson Text', serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+}
+
+.gmc-contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.gmc-contact-item {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 400;
+  color: #ffffff;
+  opacity: 0.9;
+  line-height: 1.6;
+}
+
+.gmc-contact-item strong {
+  font-weight: 500;
+  opacity: 1;
+}
+
+/* Contact Form - Heliconview Style */
+.gmc-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.gmc-form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.gmc-input,
+.gmc-textarea,
+.gmc-select {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  padding: 1rem;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 400;
+  transition: all 0.3s ease;
+}
+
+.gmc-input::placeholder,
+.gmc-textarea::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.gmc-input:focus,
+.gmc-textarea:focus,
+.gmc-select:focus {
+  outline: none;
+  border-color: rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.gmc-textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.gmc-submit-button {
+  background: #ffffff;
+  color: #000000;
+  border: none;
+  padding: 1rem 2rem;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  letter-spacing: 0.5px;
+  align-self: flex-start;
+}
+
+.gmc-submit-button:hover {
+  background: #f0f0f0;
+  transform: translateY(-2px);
+}
+
+/* Footer - Heliconview Minimal Style */
+.gmc-footer {
+  background: #ffffff;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 3rem 0;
+}
+
+.gmc-footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.gmc-footer-logo span {
+  font-family: 'Crimson Text', serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #000000;
+  letter-spacing: 0.5px;
+}
+
+.gmc-footer-text {
+  text-align: right;
+}
+
+.gmc-footer-text p {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: #666666;
+  margin: 0.25rem 0;
+}
+
+/* Responsive Design - Heliconview Approach */
+@media (max-width: 768px) {
+  .gmc-container {
+    padding: 0 1rem;
+  }
+  
+  .gmc-nav-links {
+    gap: 1rem;
+  }
+  
+  .gmc-nav-link {
+    font-size: 0.9rem;
+  }
+  
+  .gmc-hero-title {
+    font-size: 2.5rem;
+  }
+  
+  .gmc-section-title {
+    font-size: 2rem;
+  }
+  
+  .gmc-contact-content {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  
+  .gmc-form-row {
+    grid-template-columns: 1fr;
+  }
+  
+  .gmc-footer-content {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+  
+  .gmc-footer-text {
+    text-align: center;
+  }
+  
+  .gmc-stats-numbers {
+    gap: 1.5rem;
+  }
+  
+  .gmc-perfect-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .gmc-challenges-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .gmc-services-grid {
+    grid-template-columns: 1fr;
+  }
+}
+

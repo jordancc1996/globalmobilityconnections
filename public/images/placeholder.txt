@@ -1,0 +1,11 @@
+# Images Directory
+
+Place your website images here:
+
+- hero-background.jpg (1920x1080 recommended)
+- client-logos/ (SVG format recommended)
+- service-icons/ (SVG format recommended)
+- about-image.jpg (800x600 recommended)
+
+All images should be optimized for web use.
+
