@@ -101,19 +101,6 @@ const HomePage: React.FC = () => {
               </button>
             </div>
           </div>
-          <div className="gmc-hero-stats">
-            <div className="gmc-container">
-              <div className="gmc-stats-content">
-                <span className="gmc-stats-text">EMPOWERED OUR CLIENTS TO ATTAIN</span>
-                <div className="gmc-stats-numbers">
-                  <span>500M+ AUM</span>
-                  <span>50M+ investment migration</span>
-                  <span>2.5M+ golden visa support</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
 
         {/* Perfect For Section */}
         <section className="gmc-perfect-for">
